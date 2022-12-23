@@ -1,11 +1,11 @@
 <p align="center">
   <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
-    <img width="120" src="./public/expresso.webp" alt="Expresso logo" style="border-radius:100%"/>
+    <img width="150" src="./public/expresso.webp" alt="Expresso logo" style="border-radius:100%"/>
   </a>
 </p>
 <br/>
 
-# Expresso chatbot
+# Expresso Chatbot
 
 >Expresso is a Node.Js starter project for those who wants to use the [Cloud API](https://developers.facebook.com/docs/whatsapp/) and [Dialogflow](https://cloud.google.com/dialogflow/docs/) to develop WhatsApp chatbots or automations and wants to avoid some boilerplate.
 
