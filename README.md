@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://vitejs.dev" target="_blank" rel="noopener noreferrer">
-    <img width="150" src="./public/expresso.webp" alt="Expresso logo" style="border-radius:100%"/>
+    <img width="150" src="./public/expresso.webp" alt="Expresso logo"/>
   </a>
 </p>
 <br/>
@@ -38,6 +38,20 @@ npm i && npm run dev
 ```
 npm i && npm run start
 ```
+
+## Architecture
+
+The very basic workflow of Expresso based chatbot is following:
+
+1. User sends a message via whatsapp.
+2. Open API sends a HTTP POST to `/webhook` with the message and its metadata.
+3. The `/webhook` handles the HTTP request and send the message to Dialogflow as query.
+4. The Dialogflow proccess the text and identifies the most appropriate intent (In other words, Dialogflow tries to find which flow is most appropriate according to the message sent by the user).
+5. The Dialogflow return the proccessed mesage and the intent to our webhook.
+6. We should handle the intent, it is the function itself.
+7. Send some response to the user, usually the result of step 6.
+
+![](public/expresso-arch.jpg)
 
 ## Contribution
 
